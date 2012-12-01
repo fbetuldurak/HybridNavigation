@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+       android:id="@+id/widget47"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       xmlns:android="http://schemas.android.com/apk/res/android">
+<Button
+       android:id="@+id/send"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="Send"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:onClick="onSendButtonClicked" /> />
+<Button
+       android:id="@+id/start"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:text="Start"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:onClick="onStartButtonClicked" />
+
+<TextView
+       android:id="@+id/widget43"
+       android:layout_width="320dp"
+       android:layout_height="wrap_content"
+       android:text="Work Estimate Cost"
+       android:layout_below="@+id/skilltext"
+       android:layout_alignParentLeft="true" />
+<EditText
+       android:id="@+id/costinput"
+       android:layout_width="320dp"
+       android:layout_height="50dp"
+       android:textSize="18sp"
+       android:layout_below="@+id/widget43"
+       android:layout_alignParentLeft="true" />
+<TextView
+       android:id="@+id/widget44"
+       android:layout_width="320dp"
+       android:layout_height="wrap_content"
+       android:text="Work Estimate Time"
+       android:layout_below="@+id/costinput"
+       android:layout_alignParentLeft="true" />
+
+<EditText
+       android:id="@+id/timeinput"
+       android:layout_width="125dp"
+       android:layout_height="50dp"
+       android:textSize="18sp"
+       android:layout_below="@+id/widget44"
+       android:layout_alignParentLeft="true" />
+<TextView
+       android:id="@+id/widget45"
+       android:layout_width="75dp"
+       android:layout_height="50dp"
+       android:text="minutes"
+       android:layout_below="@+id/widget44"
+       android:layout_toRightOf="@+id/timeinput" />
+
+
+<TextView
+       android:id="@+id/skilltext"
+       android:layout_width="320dp"
+       android:layout_height="114dp"
+       android:layout_below="@+id/title"
+       android:layout_alignParentLeft="true" />
+<TextView
+       android:id="@+id/title"
+       android:layout_width="320dp"
+       android:layout_height="51dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true" />
+</RelativeLayout>

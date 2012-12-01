@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget35"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	>
+	
+   			 <TextView
+                android:id="@+id/timer"
+                android:text="Time: "
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:paddingRight="10dip"
+                android:layout_alignParentTop="true" />
+            <TextView
+                android:id="@+id/timeElapsed"
+                android:text="Time elapsed: "
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:paddingRight="10dip"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/timer" />
+            
+            <TextView
+                android:id="@+id/actualtimer"
+                android:text="Actual Duration: "
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:paddingRight="10dip"
+                android:layout_below="@+id/timeElapsed"
+	            android:layout_alignParentLeft="true"/>
+    		<TextView
+                android:id="@+id/playertime"
+                android:text="Player Duration: "
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:paddingRight="10dip"
+                android:layout_alignTop="@+id/actualtimer"
+	            android:layout_alignLeft="@+id/timeElapsed" />
+
+ 
+   	
+ <Button
+	android:id="@+id/clear"
+	android:layout_width="80dp"
+	android:layout_height="wrap_content"
+	android:text="Clear"
+	android:layout_alignParentBottom="true"
+	android:layout_toRightOf="@+id/delete"
+	android:onClick="onClearButtonClicked" />
+ 
+ <Button
+	android:id="@+id/delete"
+	android:layout_width="80dp"
+	android:layout_height="wrap_content"
+	android:text="Delete"
+	android:layout_alignParentBottom="true"
+	android:layout_toRightOf="@+id/togglemarkzoom"
+	android:onClick="onDeleteButtonClicked" />
+
+<ToggleButton
+	android:id="@+id/togglemarkzoom"
+	android:layout_width="80dp"
+	android:layout_height="wrap_content"
+	android:textOn="Zoom"
+	android:textOff="Mark Point"
+	android:layout_alignParentBottom="true"
+	android:layout_toRightOf="@+id/togglejobsend" 
+	android:onClick="onToggleMarkZoomClicked"/>
+
+
+<ToggleButton
+	android:id="@+id/togglejobsend"
+	android:layout_width="80dp"
+	android:layout_height="wrap_content"
+	android:textOn="Send"
+	android:textOff="Get Job"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentLeft="true" 
+	android:onClick="onToggleJobSendClicked"/>
+
+
+<com.google.android.maps.MapView
+    android:id="@+id/mapView"
+    android:layout_width="fill_parent"
+    android:layout_height="387dp"
+    android:layout_above="@+id/togglemarkzoom"
+    android:layout_alignParentLeft="true"
+     android:layout_below="@+id/actualtimer"
+    android:apiKey="0vlrwZD1nU4cdpE2cKkTX-Rdg3hQa078RTCR4gA"
+    android:clickable="true"
+    android:enabled="true" />
+
+	<LinearLayout android:id="@+id/zoom" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true" />
+        
+
+</RelativeLayout>
